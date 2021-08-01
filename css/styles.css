@@ -250,11 +250,11 @@ a {
   letter-spacing: 0.03em;
 }
 .icon-box {
-  width: 270px;
-  height: 120px;
+  padding: 25px 0;
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 /* Work */
 .work-box {
@@ -318,9 +318,9 @@ a {
 }
 
 .social-item {
-  width: 44px;
+  /* width: 44px;
   height: 44px;
-  border-radius: 50% 50%;
+  border-radius: 50% 50%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,12 +328,12 @@ a {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
-.social-item:hover svg,
-.social-item:focus svg {
+.social-link:hover svg,
+.social-link:focus svg {
   fill: white;
 }
 .social-list {
@@ -343,41 +343,46 @@ a {
   margin-top: 16px;
 }
 .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
 }
 /* Clients */
 .list-clients {
   display: flex;
-  padding: 0;
 }
-/* .link-client {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-} */
+.link-client {
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 .item-client:not(:last-child) {
   margin-right: 30px;
 }
 .item-client {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  /* border: 1px solid #afb1b8;
+  border-radius: 4px; */
 }
-.item-client:focus,
-.item-client:hover {
+.link-client:focus,
+.link-client:hover {
   border: 1px solid var(--accent-color);
 }
 .icon-logo {
-  fill: var(--text-primary);
+  fill: #afb1b8;
 }
-.item-client:focus svg,
-.item-client:hover svg {
+
+.link-client:focus svg,
+.link-client:hover svg {
   fill: var(--accent-color);
 }
 /* .icon-logo:hover,
@@ -396,7 +401,7 @@ a {
 }
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .social-box {
   margin-left: 70px;
@@ -439,6 +444,7 @@ a {
 }
 .social-footer {
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50% 50%;
 }
 .social-footer svg {
   fill: var(--primary-color);
@@ -529,8 +535,8 @@ img {
 .flex-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.flex-element:hover,
-.flex-element:focus {
+.item-link:hover,
+.item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
